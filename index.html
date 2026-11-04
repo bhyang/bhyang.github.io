@@ -13,260 +13,168 @@
 
 <body>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="#top">Brian Yang</a>
-      <nav class="nav" aria-label="Sections">
-        <a href="#about">About</a>
-        <a href="#publications">Publications</a>
-        <a href="data/Resume.pdf">CV</a>
-      </nav>
-    </div>
-  </header>
+  <main>
 
-  <main id="top">
+    <!-- site nav: hidden until writing.html ships; restore together with it
+    <nav class="site-nav" aria-label="Site">
+      <span class="sn-links">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="writing.html">Writing</a>
+      </span>
+    </nav>
+    -->
 
     <!-- ============================================================ about -->
-    <section class="hero wrap" id="about">
-      <div class="hero-grid">
-        <div class="measure">
-          <h1>Brian Yang</h1>
-          <p class="role">
-            Applied Scientist<span class="sep">·</span>Wayve Labs
-          </p>
-          <p>
-            I am an Applied Scientist at Wayve Labs on the Language and Reasoning team.
-            Previously, I completed my PhD in Robotics at Carnegie Mellon University, advised by <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a> and <a href="https://www.cs.cmu.edu/~schneide/">Jeff Schneider</a>, and worked at Meta AI.
-            Before that I did my undergrad at UC Berkeley, where I was fortunate to work with <a href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a>, <a href="https://twitter.com/RCalandra">Roberto Calandra</a>, <a href="https://twitter.com/svlevine">Sergey Levine</a>, and <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister</a>.
-          </p>
-          <p>
-            My research is about the data bottleneck in robot learning: the rare and safety-critical behaviors that are scarce in real-world logs. During my PhD I worked on this for autonomous driving, using language to specify the behavior we want and generative models to synthesize it, and treating the two as a single data engine for training driving policies. Earlier, during my undergrad, I worked on a variety of real-world robot learning problems ranging from low-cost manipulation to microrobot locomotion.
-          </p>
-          <div class="links-inline">
-            <a href="mailto:brianhyang@cmu.edu">Email</a>
-            <a href="data/Resume.pdf">CV</a>
-            <a href="data/Thesis.pdf">PhD thesis</a>
-            <a href="https://github.com/bhyang/">GitHub</a>
-            <a href="https://www.linkedin.com/in/bhyang/">LinkedIn</a>
-          </div>
-        </div>
-        <figure class="portrait">
-          <a href="images/BrianYang.jpg"><img src="images/BrianYang.jpg" alt="Portrait of Brian Yang" loading="eager"></a>
-        </figure>
+    <section class="head" id="about">
+      <div>
+        <h1>Brian Yang</h1>
+        <p class="role">Applied Scientist &middot; Wayve Labs</p>
+        <p class="bio">
+          I am an Applied Scientist at Wayve Labs on the Language and Reasoning team.
+          Previously, I completed my PhD in Robotics at Carnegie Mellon University, advised by <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a> and <a href="https://www.cs.cmu.edu/~schneide/">Jeff Schneider</a>, and worked at Meta AI.
+          Before that I did my undergrad at UC Berkeley, where I was fortunate to work with <a href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a>, <a href="https://twitter.com/RCalandra">Roberto Calandra</a>, <a href="https://twitter.com/svlevine">Sergey Levine</a>, and <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister</a>.
+        </p>
+        <p class="bio">
+          My research is about the data bottleneck in robot learning: the rare and safety-critical behaviors that are scarce in real-world logs. During my PhD I worked on this for autonomous driving, using language to specify the behavior we want and generative models to synthesize it, and treating the two as a single data engine for training driving policies. Earlier, during my undergrad, I worked on a variety of real-world robot learning problems ranging from low-cost manipulation to microrobot locomotion.
+        </p>
+        <p class="links"><a href="mailto:brianhyang@cmu.edu">Email</a><i>/</i><a href="data/Resume.pdf">CV</a><i>/</i><a href="data/Thesis.pdf">PhD thesis</a><i>/</i><a href="https://github.com/bhyang/">GitHub</a><i>/</i><a href="https://www.linkedin.com/in/bhyang/">LinkedIn</a></p>
       </div>
+      <a class="por" href="images/BrianYang.jpg"><img src="images/BrianYang.jpg" alt="Portrait of Brian Yang"></a>
     </section>
+
+    <hr class="rule">
 
     <!-- ==================================================== publications -->
-    <section class="wrap" id="publications">
-      <div class="section-head">
-        <h2>Publications</h2>
-        <span class="count">11 papers &middot; 1 thesis</span>
-      </div>
+    <section class="sec" id="publications">
+      <h2 class="sec-t">Publications <span>&middot; 11 papers, 1 thesis</span></h2>
 
-      <div class="pub-list">
+      <dl class="bib">
 
-        <article class="pub">
-          <div class="pub-thumb">
-            <img src="images/eurekadrive.png" alt="EurekaDrive overview: reward code and a diffusion policy are iteratively refined across three rounds of feedback from a critic vision-language model">
-          </div>
-          <div>
-            <h3 class="pub-title">EurekaDrive: Vision-Language Guided Program Search for Language-Conditioned Diffusion Driving Policies</h3>
-            <p class="pub-authors">Mineui Hong, Harsh Shah, <strong>Brian Yang</strong>, Eric Shau, Alexandre Capone, Katerina Fragkiadaki, Jeff Schneider</p>
-            <p class="pub-meta"><span class="venue is-pending">Submitted to ICRA 2027</span></p>
-          </div>
-        </article>
+        <div class="row is-focus">
+          <dt class="yr"><span class="flag">&#9733;</span> 2027</dt>
+          <dd class="cite">
+            <p class="ttl">EurekaDrive: Vision-Language Guided Program Search for Language-Conditioned Diffusion Driving Policies</p>
+            <p class="au">Mineui Hong, Harsh Shah, <b>Brian Yang</b>, Eric Shau, Alexandre Capone, Katerina Fragkiadaki, Jeff Schneider &nbsp;<span class="sub"><em>ICRA 2027</em> submission</span></p>
+          </dd>
+          <dd class="th"><img src="images/eurekadrive.png" alt="EurekaDrive: reward code and a diffusion policy iteratively refined across three rounds of feedback from a critic vision-language model" loading="lazy"></dd>
+        </div>
 
-        <article class="pub">
-          <div class="pub-thumb">
-            <img src="images/gandalf.png" alt="GANDALF overview: reward functions guide a scene-conditioned flow prior to produce counterfactual driving demonstrations that are task-diverse, reward-labeled, and language-labeled">
-          </div>
-          <div>
-            <h3 class="pub-title">GANDALF: Grounding Autonomous Driving Agents via Language Feedback</h3>
-            <p class="pub-authors"><strong>Brian Yang</strong>, Jeff Schneider, Katerina Fragkiadaki</p>
-            <p class="pub-meta"><span class="venue is-pending">Submitted to ECCV 2026</span></p>
-          </div>
-        </article>
+        <div class="row">
+          <dt class="yr">2026</dt>
+          <dd class="cite">
+            <p class="ttl">GANDALF: Grounding Autonomous Driving Agents via Language Feedback</p>
+            <p class="au"><b>Brian Yang</b>, Jeff Schneider, Katerina Fragkiadaki &nbsp;<span class="sub"><em>ECCV 2026</em> submission</span></p>
+          </dd>
+          <dd class="th"><img src="images/gandalf.png" alt="GANDALF: reward functions guide a scene-conditioned flow prior to produce counterfactual driving demonstrations" loading="lazy"></dd>
+        </div>
 
-        <article class="pub">
-          <a class="pub-thumb" href="data/Thesis.pdf" aria-label="PhD thesis PDF: A Language-Guided Generative Data Engine for Autonomous Driving">
-            <img src="images/thesis.svg" alt="" loading="lazy">
-          </a>
-          <div>
-            <h3 class="pub-title">A Language-Guided Generative Data Engine for Autonomous Driving</h3>
-            <p class="pub-authors"><strong>Brian Yang</strong></p>
-            <p class="pub-meta"><span class="venue is-thesis">PhD thesis</span><span class="pub-note">Robotics Institute, Carnegie Mellon University &middot; March 2026</span></p>
-            <p class="pub-links">
-              <a class="chip" href="data/Thesis.pdf">PDF</a>
-            </p>
-          </div>
-        </article>
+        <div class="row">
+          <dt class="yr">2026</dt>
+          <dd class="cite">
+            <p class="ttl">A Language-Guided Generative Data Engine for Autonomous Driving</p>
+            <p class="au"><b>Brian Yang</b> &nbsp;<span class="sub">PhD thesis, The Robotics Institute, Carnegie Mellon University &middot; CMU-RI-TR-26-16</span></p>
+            <p class="lns"><a href="data/Thesis.pdf">PDF</a></p>
+          </dd>
+          <dd class="th"><a href="data/Thesis.pdf"><img src="images/thesis.svg" alt="Cover of the thesis: A Language-Guided Generative Data Engine for Autonomous Driving" loading="lazy"></a></dd>
+        </div>
 
-        <article class="pub">
-          <a class="pub-thumb" href="https://diffusion-es.github.io/" aria-label="Diffusion-ES project website">
-            <img src="images/diffusiones.png" alt="" loading="lazy">
-          </a>
-          <div>
-            <h3 class="pub-title">Diffusion-ES: Gradient-free Planning with Diffusion for Autonomous Driving and Zero-Shot Instruction Following</h3>
-            <p class="pub-authors"><strong>Brian Yang</strong>, Huangyuan Su, Nikolaos Gkanatsios, Tsung-Wei Ke, Ayush Jain, Jeff Schneider, Katerina Fragkiadaki</p>
-            <p class="pub-meta"><span class="venue">CVPR 2024</span></p>
-            <p class="pub-links">
-              <a class="chip" href="https://arxiv.org/abs/2402.06559">arXiv</a>
-              <a class="chip" href="https://arxiv.org/pdf/2402.06559.pdf">PDF</a>
-              <a class="chip" href="https://diffusion-es.github.io/">Website</a>
-            </p>
-          </div>
-        </article>
+        <div class="row is-focus">
+          <dt class="yr"><span class="flag">&#9733;</span> 2024</dt>
+          <dd class="cite">
+            <p class="ttl">Diffusion-ES: Gradient-free Planning with Diffusion for Autonomous Driving and Zero-Shot Instruction Following</p>
+            <p class="au"><b>Brian Yang</b>, Huangyuan Su, Nikolaos Gkanatsios, Tsung-Wei Ke, Ayush Jain, Jeff Schneider, Katerina Fragkiadaki &nbsp;<span class="sub"><em>CVPR 2024</em></span></p>
+            <p class="lns"><a href="https://arxiv.org/abs/2402.06559">arXiv</a><a href="https://arxiv.org/pdf/2402.06559.pdf">PDF</a><a href="https://diffusion-es.github.io/">Website</a></p>
+          </dd>
+          <dd class="th"><a href="https://diffusion-es.github.io/"><img src="images/diffusiones.png" alt="" loading="lazy"></a></dd>
+        </div>
 
-        <article class="pub">
-          <div class="pub-thumb">
-            <img src="images/icml.png" alt="" loading="lazy">
-          </div>
-          <div>
-            <h3 class="pub-title">Learning Driving Policies with Offline Counterfactual Reactive Simulation</h3>
-            <p class="pub-authors">Adam Villaflor, <strong>Brian Yang</strong>, Katerina Fragkiadaki, John Dolan, Jeff Schneider</p>
-            <p class="pub-meta"><span class="venue is-pending">In submission</span></p>
-          </div>
-        </article>
+        <div class="row">
+          <dt class="yr">2024</dt>
+          <dd class="cite">
+            <p class="ttl">Learning Driving Policies with Offline Counterfactual Reactive Simulation</p>
+            <p class="au">Adam Villaflor, <b>Brian Yang</b>, Katerina Fragkiadaki, John Dolan, Jeff Schneider &nbsp;<span class="sub"><em>ICML 2024</em> submission</span></p>
+          </dd>
+          <dd class="th"><img src="images/icml.png" alt="" loading="lazy"></dd>
+        </div>
 
-        <article class="pub">
-          <a class="pub-thumb" href="https://arxiv.org/abs/2403.07232" aria-label="Tractable Joint Prediction and Planning Over Discrete Behavior Modes for Urban Driving">
-            <img src="images/p2dbm.png" alt="" loading="lazy">
-          </a>
-          <div>
-            <h3 class="pub-title">Tractable Joint Prediction and Planning Over Discrete Behavior Modes for Urban Driving</h3>
-            <p class="pub-authors">Adam Villaflor, <strong>Brian Yang</strong>, Huangyuan Su, Katerina Fragkiadaki, John Dolan, Jeff Schneider</p>
-            <p class="pub-meta"><span class="venue">ICRA 2024</span></p>
-            <p class="pub-links">
-              <a class="chip" href="https://arxiv.org/abs/2403.07232">arXiv</a>
-              <a class="chip" href="https://arxiv.org/pdf/2403.07232.pdf">PDF</a>
-              <a class="chip" href="https://github.com/avillaflor/P2DBM">Code</a>
-            </p>
-          </div>
-        </article>
+        <div class="row">
+          <dt class="yr">2024</dt>
+          <dd class="cite">
+            <p class="ttl">Tractable Joint Prediction and Planning Over Discrete Behavior Modes for Urban Driving</p>
+            <p class="au">Adam Villaflor, <b>Brian Yang</b>, Huangyuan Su, Katerina Fragkiadaki, John Dolan, Jeff Schneider &nbsp;<span class="sub"><em>ICRA 2024</em></span></p>
+            <p class="lns"><a href="https://arxiv.org/abs/2403.07232">arXiv</a><a href="https://arxiv.org/pdf/2403.07232.pdf">PDF</a><a href="https://github.com/avillaflor/P2DBM">Code</a></p>
+          </dd>
+          <dd class="th"><a href="https://arxiv.org/abs/2403.07232"><img src="images/p2dbm.png" alt="" loading="lazy"></a></dd>
+        </div>
 
-        <article class="pub">
-          <a class="pub-thumb" href="https://bair.berkeley.edu/blog/2023/01/20/relmm/" aria-label="Fully Autonomous Real-World Reinforcement Learning project blog">
-            <img src="images/relmm.png" alt="" loading="lazy">
-          </a>
-          <div>
-            <h3 class="pub-title">Fully Autonomous Real-World Reinforcement Learning with Applications to Mobile Manipulation</h3>
-            <p class="pub-authors">Charles Sun, Jędrzej Orbik, Coline Devin, <strong>Brian Yang</strong>, Abhishek Gupta, Glen Berseth, Sergey Levine</p>
-            <p class="pub-meta"><span class="venue">CoRL 2022</span></p>
-            <p class="pub-links">
-              <a class="chip" href="https://arxiv.org/abs/2107.13545">arXiv</a>
-              <a class="chip" href="https://arxiv.org/pdf/2107.13545.pdf">PDF</a>
-              <a class="chip" href="https://bair.berkeley.edu/blog/2023/01/20/relmm/">Blog</a>
-              <a class="chip" href="https://github.com/charlesjsun/ReLMM">Code</a>
-            </p>
-          </div>
-        </article>
+        <div class="row">
+          <dt class="yr">2022</dt>
+          <dd class="cite">
+            <p class="ttl">Fully Autonomous Real-World Reinforcement Learning with Applications to Mobile Manipulation</p>
+            <p class="au">Charles Sun, J&#281;drzej Orbik, Coline Devin, <b>Brian Yang</b>, Abhishek Gupta, Glen Berseth, Sergey Levine &nbsp;<span class="sub"><em>CoRL 2022</em></span></p>
+            <p class="lns"><a href="https://arxiv.org/abs/2107.13545">arXiv</a><a href="https://arxiv.org/pdf/2107.13545.pdf">PDF</a><a href="https://bair.berkeley.edu/blog/2023/01/20/relmm/">Blog</a><a href="https://github.com/charlesjsun/ReLMM">Code</a></p>
+          </dd>
+          <dd class="th"><a href="https://bair.berkeley.edu/blog/2023/01/20/relmm/"><img src="images/relmm.png" alt="" loading="lazy"></a></dd>
+        </div>
 
-        <article class="pub">
-          <a class="pub-thumb" href="https://sites.google.com/berkeley.edu/mavric" aria-label="MAVRIC project page">
-            <img src="images/wrench.png" alt="" loading="lazy">
-          </a>
-          <div>
-            <h3 class="pub-title">MAVRIC: Morphology-Agnostic Visual Robotic Control</h3>
-            <p class="pub-authors"><strong>Brian Yang*</strong>, Dinesh Jayaraman*, Glen Berseth, Alexei Efros, Sergey Levine</p>
-            <p class="pub-meta"><span class="venue">RA-L + ICRA 2020</span></p>
-            <p class="pub-links">
-              <a class="chip" href="https://arxiv.org/abs/1912.13360">arXiv</a>
-              <a class="chip" href="https://arxiv.org/pdf/1912.13360.pdf">PDF</a>
-              <a class="chip" href="https://sites.google.com/berkeley.edu/mavric">Project page</a>
-            </p>
-          </div>
-        </article>
+        <div class="row">
+          <dt class="yr">2020</dt>
+          <dd class="cite">
+            <p class="ttl">MAVRIC: Morphology-Agnostic Visual Robotic Control</p>
+            <p class="au"><b>Brian Yang*</b>, Dinesh Jayaraman*, Glen Berseth, Alexei Efros, Sergey Levine &nbsp;<span class="sub"><em>RA-L + ICRA 2020</em></span></p>
+            <p class="lns"><a href="https://arxiv.org/abs/1912.13360">arXiv</a><a href="https://arxiv.org/pdf/1912.13360.pdf">PDF</a><a href="https://sites.google.com/berkeley.edu/mavric">Project page</a></p>
+          </dd>
+          <dd class="th"><a href="https://sites.google.com/berkeley.edu/mavric"><img src="images/wrench.png" alt="" loading="lazy"></a></dd>
+        </div>
 
-        <article class="pub">
-          <a class="pub-thumb" href="https://digit.ml/" aria-label="DIGIT project page">
-            <img src="images/teaser.png" alt="" loading="lazy">
-          </a>
-          <div>
-            <h3 class="pub-title">DIGIT: A Novel Design for a Low-Cost Compact High-Resolution Tactile Sensor with Application to In-Hand Manipulation</h3>
-            <p class="pub-authors">Mike Lambeta*, Po-Wei Chou*, Stephen Tian, <strong>Brian Yang</strong>, Benjamin Maloon, Victoria Rose Most, Dave Stroud, Raymond Santos, Ahmad Byagowi, Gregg Kammerer, Dinesh Jayaraman, Roberto Calandra</p>
-            <p class="pub-meta"><span class="venue">RA-L + ICRA 2020</span></p>
-            <p class="pub-links">
-              <a class="chip" href="https://arxiv.org/abs/2005.14679">arXiv</a>
-              <a class="chip" href="https://arxiv.org/pdf/2005.14679.pdf">PDF</a>
-              <a class="chip" href="https://digit.ml/">Project page</a>
-            </p>
-          </div>
-        </article>
+        <div class="row">
+          <dt class="yr">2020</dt>
+          <dd class="cite">
+            <p class="ttl">DIGIT: A Novel Design for a Low-Cost Compact High-Resolution Tactile Sensor with Application to In-Hand Manipulation</p>
+            <p class="au">Mike Lambeta*, Po-Wei Chou*, Stephen Tian, <b>Brian Yang</b>, Benjamin Maloon, Victoria Rose Most, Dave Stroud, Raymond Santos, Ahmad Byagowi, Gregg Kammerer, Dinesh Jayaraman, Roberto Calandra &nbsp;<span class="sub"><em>RA-L + ICRA 2020</em></span></p>
+            <p class="lns"><a href="https://arxiv.org/abs/2005.14679">arXiv</a><a href="https://arxiv.org/pdf/2005.14679.pdf">PDF</a><a href="https://digit.ml/">Project page</a></p>
+          </dd>
+          <dd class="th"><a href="https://digit.ml/"><img src="images/teaser.png" alt="" loading="lazy"></a></dd>
+        </div>
 
-        <article class="pub">
-          <a class="pub-thumb" href="https://sites.google.com/view/replab/" aria-label="REPLAB project page">
-            <img src="images/replab.jpg" alt="" loading="lazy">
-          </a>
-          <div>
-            <h3 class="pub-title">REPLAB: A Reproducible Low-Cost Arm Benchmark Platform for Robotic Learning</h3>
-            <p class="pub-authors"><strong>Brian Yang</strong>, Dinesh Jayaraman, Sergey Levine</p>
-            <p class="pub-meta"><span class="venue">ICRA 2019</span></p>
-            <p class="pub-links">
-              <a class="chip" href="https://arxiv.org/abs/1905.07447">arXiv</a>
-              <a class="chip" href="https://arxiv.org/pdf/1905.07447.pdf">PDF</a>
-              <a class="chip" href="https://sites.google.com/view/replab/">Project page</a>
-              <a class="chip" href="https://github.com/bhyang/replab">Code</a>
-            </p>
-          </div>
-        </article>
+        <div class="row">
+          <dt class="yr">2019</dt>
+          <dd class="cite">
+            <p class="ttl">REPLAB: A Reproducible Low-Cost Arm Benchmark Platform for Robotic Learning</p>
+            <p class="au"><b>Brian Yang</b>, Dinesh Jayaraman, Sergey Levine &nbsp;<span class="sub"><em>ICRA 2019</em></span></p>
+            <p class="lns"><a href="https://arxiv.org/abs/1905.07447">arXiv</a><a href="https://arxiv.org/pdf/1905.07447.pdf">PDF</a><a href="https://sites.google.com/view/replab/">Project page</a><a href="https://github.com/bhyang/replab">Code</a></p>
+          </dd>
+          <dd class="th"><a href="https://sites.google.com/view/replab/"><img src="images/replab.jpg" alt="" loading="lazy"></a></dd>
+        </div>
 
-        <article class="pub">
-          <a class="pub-thumb" href="https://sites.google.com/view/learning-robot-morphology/" aria-label="Data-efficient Learning of Morphology and Controller for a Microrobot project page">
-            <img src="images/microrobot-morphology.png" alt="" loading="lazy">
-          </a>
-          <div>
-            <h3 class="pub-title">Data-efficient Learning of Morphology and Controller for a Microrobot</h3>
-            <p class="pub-authors">Thomas Liao, Grant Wang, <strong>Brian Yang</strong>, Rene Lee, Kris Pister, Sergey Levine, Roberto Calandra</p>
-            <p class="pub-meta"><span class="venue">ICRA 2019</span></p>
-            <p class="pub-links">
-              <a class="chip" href="https://arxiv.org/abs/1905.01334">arXiv</a>
-              <a class="chip" href="https://arxiv.org/pdf/1905.01334.pdf">PDF</a>
-              <a class="chip" href="https://sites.google.com/view/learning-robot-morphology/">Project page</a>
-              <a class="chip" href="https://github.com/tholiao/learning-morph-and-ctrl">Code</a>
-            </p>
-          </div>
-        </article>
+        <div class="row">
+          <dt class="yr">2019</dt>
+          <dd class="cite">
+            <p class="ttl">Data-efficient Learning of Morphology and Controller for a Microrobot</p>
+            <p class="au">Thomas Liao, Grant Wang, <b>Brian Yang</b>, Rene Lee, Kris Pister, Sergey Levine, Roberto Calandra &nbsp;<span class="sub"><em>ICRA 2019</em></span></p>
+            <p class="lns"><a href="https://arxiv.org/abs/1905.01334">arXiv</a><a href="https://arxiv.org/pdf/1905.01334.pdf">PDF</a><a href="https://sites.google.com/view/learning-robot-morphology/">Project page</a><a href="https://github.com/tholiao/learning-morph-and-ctrl">Code</a></p>
+          </dd>
+          <dd class="th"><a href="https://sites.google.com/view/learning-robot-morphology/"><img src="images/microrobot-morphology.png" alt="" loading="lazy"></a></dd>
+        </div>
 
-        <article class="pub">
-          <a class="pub-thumb" href="https://sites.google.com/view/learning-locomotion-primitives" aria-label="Learning Flexible and Reusable Locomotion Primitives for a Microrobot project page">
-            <img src="images/prototype.png" alt="" loading="lazy">
-          </a>
-          <div>
-            <h3 class="pub-title">Learning Flexible and Reusable Locomotion Primitives for a Microrobot</h3>
-            <p class="pub-authors"><strong>Brian Yang*</strong>, Grant Wang*, Roberto Calandra, Daniel Contreras, Sergey Levine, Kris Pister</p>
-            <p class="pub-meta"><span class="venue">RA-L + ICRA 2018</span></p>
-            <p class="pub-links">
-              <a class="chip" href="https://arxiv.org/abs/1803.00196">arXiv</a>
-              <a class="chip" href="https://arxiv.org/pdf/1803.00196.pdf">PDF</a>
-              <a class="chip" href="https://sites.google.com/view/learning-locomotion-primitives">Project page</a>
-              <a class="chip" href="https://github.com/bhyang/microrobot-locomotion">Code</a>
-            </p>
-          </div>
-        </article>
-      </div>
+        <div class="row">
+          <dt class="yr">2018</dt>
+          <dd class="cite">
+            <p class="ttl">Learning Flexible and Reusable Locomotion Primitives for a Microrobot</p>
+            <p class="au"><b>Brian Yang*</b>, Grant Wang*, Roberto Calandra, Daniel Contreras, Sergey Levine, Kris Pister &nbsp;<span class="sub"><em>RA-L + ICRA 2018</em></span></p>
+            <p class="lns"><a href="https://arxiv.org/abs/1803.00196">arXiv</a><a href="https://arxiv.org/pdf/1803.00196.pdf">PDF</a><a href="https://sites.google.com/view/learning-locomotion-primitives">Project page</a><a href="https://github.com/bhyang/microrobot-locomotion">Code</a></p>
+          </dd>
+          <dd class="th"><a href="https://sites.google.com/view/learning-locomotion-primitives"><img src="images/prototype.png" alt="" loading="lazy"></a></dd>
+        </div>
+
+      </dl>
+      <p class="legend"><span class="flag">&#9733;</span> The work that best represents my research interests.</p>
     </section>
-
-    <!-- ========================================================== beyond
-         Ready for non-career content. Copy one <article class="pub"> block
-         from Publications and drop it in here, or use the note card below.
-
-    <section class="wrap" id="beyond">
-      <div class="section-head">
-        <h2>Beyond Research</h2>
-      </div>
-      <div class="measure">
-        <p>…</p>
-      </div>
-    </section>
-    ============================================================ -->
 
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>&copy; 2026 Brian Yang</span>
-      <span>Site template inspired by <a href="https://jonbarron.info/">jonbarron.info</a>.</span>
-    </div>
+  <footer class="foot">
+    <p>&copy; 2026 Brian Yang</p>
   </footer>
 
 </body>
